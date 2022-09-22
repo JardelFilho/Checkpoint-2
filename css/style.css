@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* header: div dentro do header e a ul dentro da nav*/
+
+.cabecalho{
+    margin: 15px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cabecalho a img{
+    transition-duration: 500ms;
+}
+.cabecalho a img:hover{
+    transform: scale(1.02);
+}
+.menu-cabecalho{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+.menu-cabecalho li a {
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/* cores dos hiperlinks do menu-cabecalho */
+
+.item-menu-cabecalho-vermelho   {color: #E51B3E;}
+.item-menu-cabecalho-cinza      {color:  #626262;} 
+
+/* banner */
+
+.banner-principal{
+    height: 100vh;
+    background-image: url(../img/Rectangle\ 2background-banner-principal.png);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    font-weight: 900;
+    font-size: 72px;
+    color: #E51B3E;
+}
+.texto-banner-principal{
+    font-weight: 300;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+.banner-principal div{
+cursor:default;
+}
+.botao-banner-principal{
+    margin-top: 30px;
+    padding: 22px 112px;
+    background-color: rgba(51, 187, 105, 0.05);
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    border: 1px solid #33BB69;
+    border-radius: 12px;
+    transition-duration: 500ms;
+}
+.botao-banner-principal:hover {
+ background-color: #33BB69;
+}
+
+/* conteúdo da página: a classe .card-indv está sendo usada pra estilizar todos os cards */
+
+.itens{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #E5E5E5
+}
+h2 {
+    margin: 34px;
+    font-weight: 900;
+    font-size: 64px;
+}
+h2:hover{
+    cursor: default;
+}
+.card {
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card-indv{
+    width: 350px;
+    height: 510px;
+    margin-bottom: 40px;
+    border-radius: 12px;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0 5px 15px 5px #d1d1d1 ;
+}
+
+/* imagens de background dos cards */
+
+.card-1{
+    background-image: url(../img/Rectangle\ 4card-1-joker.png);
+}
+.card-2{
+    background-image: url(../img/Rectangle\ 4card-2-after.png);
+}
+.card-3{
+    background-image: url(../img/Rectangle\ 4card-3-CptMarvel.png);
+}
+.card-4{
+    background-image: url(../img/Rectangle\ 4card-4-Dora.png);
+}
+.card-5{
+    background-image: url(../img/Rectangle\ 4card-5-1917.png);
+}
+.card-6{
+    background-image: url(../img/Rectangle\ 4card-6-thor.png);
+}
+
+/* Conteúdo dos cards */
+
+.card-interior {
+    padding: 26px 32px;
+    width: 350px;
+    height: 270px;
+    background-color: #F4F4F4;
+    border-radius: 12px;
+}
+h3 {
+    font-size: 24px;
+}
+.descricao-card-interior{
+    margin-top: 13px;
+    min-height: 120px;
+    font-weight: 300;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.75);
+}
+.botao-cards{
+    padding: 15px 115px;
+    background-color: #33BB69;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    border-style: none;
+    border-radius: 12px;
+    transition-duration: 500ms;
+}
+.botao-cards:hover {
+    background-color: #0e833d;
+}
+
+/* Rodapé */
+
+.rodape{
+    padding: 80px;
+    background-color: #171717;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.feito-por{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.feito-por article{
+    display: flex;
+    flex-direction: column;
+}
+.segundo-feito-por  { align-items: center; }
+.terceiro-feito-por { align-items: flex-end; }
+
+.nome{
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+.dev-por{
+    margin-bottom: 12px;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.75);
+}
+.icones{
+    display: flex;
+    gap: 16px;
+}
+.rodape-data{
+    margin-top: 80px;
+    font-weight: 400;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.5);
+}
+@media (max-width:463px){
+    .banner-principal{
+        padding: 70px;
+    }
+    .feito-por {
+        flex-direction: column;
+    }
+    .segundo-feito-por {
+        align-items: flex-start;
+    }
+    .terceiro-feito-por{
+        align-items: flex-start;
+    }
+}
