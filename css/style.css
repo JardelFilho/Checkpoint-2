@@ -72,6 +72,7 @@ cursor:default;
 }
 .botao-banner-principal:hover {
  background-color: #33BB69;
+ cursor: pointer;
 }
 
 /* conteúdo da página: a classe .card-indv está sendo usada pra estilizar todos os cards */
@@ -160,6 +161,7 @@ h3 {
 }
 .botao-cards:hover {
     background-color: #0e833d;
+    cursor: pointer;
 }
 
 /* Rodapé */
@@ -205,7 +207,7 @@ h3 {
     font-size: 24px;
     color: rgba(255, 255, 255, 0.5);
 }
-@media (max-width:463px){
+@media (max-width:428px){
     .banner-principal{
         padding: 70px;
     }
