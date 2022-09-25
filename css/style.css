@@ -29,6 +29,9 @@
     font-size: 18px;
     text-decoration: none;
 }
+.tres-riscos {
+    display: none;
+}
 
 /* cores dos hiperlinks do menu-cabecalho */
 
@@ -208,8 +211,18 @@ h3 {
     color: rgba(255, 255, 255, 0.5);
 }
 @media (max-width:428px){
+    nav{
+        display: none;
+    }
+    .tres-riscos{
+        display: block;
+    }
     .banner-principal{
         padding: 70px;
+    }
+    .card{
+        max-width: 100%;
+        padding: 0 40px;
     }
     .feito-por {
         flex-direction: column;
